@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #1e40af;
+        }
+
+        .about, .projects, .contact {
+            margin-top: 40px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px){
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Nama Kamu</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Halo, Saya Web Developer</h1>
+    <p>Membuat website modern dan responsif</p>
+    <a href="#contact" class="btn">Hubungi Saya</a>
+</section>
+
+<section class="about" id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang web developer yang fokus pada pembuatan website modern, cepat, dan responsif menggunakan HTML, CSS, dan JavaScript.</p>
+</section>
+
+<section class="projects" id="projects">
+    <h2>Project Saya</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Website Toko Online</h3>
+            <p>Membuat website e-commerce sederhana dengan fitur keranjang.</p>
+        </div>
+        <div class="project-card">
+            <h3>Landing Page</h3>
+            <p>Landing page modern untuk bisnis dan startup.</p>
+        </div>
+        <div class="project-card">
+            <h3>Aplikasi Portfolio</h3>
+            <p>Website portfolio pribadi dengan desain minimalis.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Kontak</h2>
+    <p>Email: emailkamu@email.com</p>
+    <p>Instagram: @usernamekamu</p>
+</section>
+
+<footer>
+    <p>© 2026 Nama Kamu. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
